@@ -1,0 +1,105 @@
+@use "./abstracts" as abs;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: abs.$cl-black;
+	font-family: abs.$ff-poppins;
+}
+
+.head {
+	width: 500px;
+	height: 550px;
+	background-color: abs.$cl-green;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: 100px 50px 50px 100px 50px 50px 100px;
+	grid-template-rows: 100px 100px 50px 100px 100px 100px;
+}
+
+.box {
+	background-color: abs.$cl-black;
+
+	div {
+		width: 100%;
+		height: 100%;
+	}
+
+	&-1 {
+		grid-area: 2 / 2 / 3 / 4;
+
+		div {
+			border-top: 25px solid abs.$cl-dark-green;
+			border-left: 25px solid abs.$cl-dark-green;
+		}
+	}
+
+	&-2 {
+		grid-area: 2 / 5 / 3 / 7;
+
+		div {
+			border-top: 25px solid abs.$cl-dark-green;
+			border-right: 25px solid abs.$cl-dark-green;
+		}
+	}
+
+	&-3 {
+		grid-area: 3 / 4 / 4 / 5;
+
+		div {
+			border-top: 25px solid abs.$cl-dark-green;
+		}
+	}
+
+	&-4 {
+		grid-area: 4 / 3 / 5 / 4;
+
+		div {
+			border-top: 25px solid abs.$cl-dark-green;
+		}
+	}
+
+	&-5 {
+		grid-area: 4 / 5 / 5 / 6;
+
+		div {
+			border-top: 25px solid abs.$cl-dark-green;
+		}
+	}
+
+	&-6 {
+		grid-area: 4 / 4 / 5 / 5;
+	}
+
+	&-7 {
+		grid-area: 5 / 3 / 6 / 4;
+	}
+
+	&-8 {
+		grid-area: 5 / 5 / 6 / 6;
+	}
+}
+
+p {
+	color: abs.$cl-white;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	a:link,
+	a:visited {
+		color: inherit;
+	}
+}
