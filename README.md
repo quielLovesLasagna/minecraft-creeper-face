@@ -1,6 +1,6 @@
 # Minecraft Creeper face - CSS Art
 
-A simple Food Card UI component.
+A simple CSS Minecraft Creeper face art.
 
 ## Table of contents
 
@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://quiel-minecraft-creeper-face.netlify.app/](https://quiel-minecraft-creeper-face.netlify.app/)
 
 ## My process
 
